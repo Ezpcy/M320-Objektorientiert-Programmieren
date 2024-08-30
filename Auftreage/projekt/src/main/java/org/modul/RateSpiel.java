@@ -19,6 +19,11 @@ public class RateSpiel {
         this.gamestatus = true;
     }
 
+    public RateSpiel() {
+        this.number = 3;
+        this.gamestatus = true;
+    }
+
     void check(String n) {
         switch (n.toLowerCase()) {
             case "q" -> {

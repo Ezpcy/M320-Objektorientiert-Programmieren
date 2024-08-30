@@ -52,14 +52,34 @@ public class Projekt {
 
         } catch (Exception e) {
             System.out.println("Please input a number");
-            return;
         }
-
         RateSpiel rateSpiel = new RateSpiel(int_range);
         while (rateSpiel.gamestatus) {
             System.out.println("Your guess: ");
             String guess = scanner.nextLine();
-            rateSpiel.check(guess);
+            RateSpiel my;
+            rateSpiel.check(guess
+            );
         }
+        /*         for (int i = 0; i <= 100; i++) {
+            double gallons;
+            double litres;
+
+            gallons = i;              //assigns a value
+
+            litres = gallons / 3.7854;
+
+            // print out using the System library:
+            System.out.println(gallons + " gallons is " + litres + " litres.");
+            if (i % 10 == 0) {
+                System.out.println("");
+            }
+
+        } */
+        float cel = Celsius.celsius(20);
+        System.out.println(cel);
+        float dis = DistanzGewitter.distanz(5);
+        System.out.println(dis);
     }
+
 }

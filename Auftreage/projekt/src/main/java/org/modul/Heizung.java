@@ -7,6 +7,8 @@ public class Heizung {
     private int max;
     private int increment;
 
+    
+
     public Heizung(int min, int max, int increment) {
         this.min = min;
         this.max = max;
